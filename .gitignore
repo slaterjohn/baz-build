@@ -1,4 +1,4 @@
-./_baz/node_modules
-./css
-./images
-./js
+/_baz/node_modules/
+/css/
+/images/
+/js/

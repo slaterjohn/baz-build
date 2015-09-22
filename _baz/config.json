@@ -1,0 +1,58 @@
+{
+	"production-ready": false,
+
+	"header-comment": {
+		"allow": true,
+		"body": "Compiled using baz-build."
+	},
+
+	"css-preprocessor": {
+		"less": true,
+		"scss": false
+	},
+
+	"output-folders": {
+		"styles": "css/",
+		"images": "images/",
+		"scripts": "js/"
+	},
+
+	"output-files": {
+		"styles": "all.css",
+		"scripts": "all.js"
+	},
+
+	"output-path-depth": "./../",
+
+	"paths": {
+		"watch-paths": {
+			"less-files": [ "./src/styles/less/**/*.less" ],
+			"scss-files": [ "./src/styles/scss/**/*.scss" ],
+			"js-files": [ "./src/scripts/**/*.js" ],
+			"image-files": [ "./src/images/**/*", "!./images/**/*.nc.*" ]
+		},
+		"input-paths": {
+			"less-files": [ "./src/styles/less/all.less" ],
+			"scss-files": [ "./src/styles/scss/all.scss" ],
+			"js-files": [ "./src/scripts/all.js" ],
+			"image-files": [ "./src/images/**/*", "!./images/**/*.nc.*" ]
+		}
+	},
+
+	"source-maps": {
+		"enabled": true,
+		"source-map-path": "./maps/"
+	},
+
+	"task-names": {
+		"less": "compile-less",
+		"scss": "compile-scss",
+		"js": "compile-js",
+		"images": "optimise-images",
+		"cleanup": "cleanup",
+		"dev-build": "dev-build",
+		"prod-build": "prod-build",
+		"styles": "compile-css"
+	}
+
+}
